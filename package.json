@@ -1,0 +1,34 @@
+{
+  "name": "gulp-gae",
+  "version": "0.0.1",
+  "description": "Gulp Google App Engine Plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maciejzasada/gulp-gae.git"
+  },
+  "keywords": [
+    "gulp",
+    "gae",
+    "google",
+    "app",
+    "engine",
+    "appengine"
+  ],
+  "author": "Maciej Zasada <hello@maciejzasada.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maciejzasada/gulp-gae/issues"
+  },
+  "homepage": "https://github.com/maciejzasada/gulp-gae#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.6",
+    "through2": "^2.0.0"
+  }
+}
