@@ -50,8 +50,6 @@ module.exports = function (action, args, params) {
   }
 
   function bufferContents(file, enc, cb) {
-    console.log('bufferContents', file);
-
     var appYamlPath = path.dirname(file.path),
       shouldWait = false;
 
