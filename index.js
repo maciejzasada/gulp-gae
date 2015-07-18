@@ -69,7 +69,6 @@ module.exports = function (action, args, params) {
   }
 
   function endStream(cb) {
-    console.log('end stream');
     cb();
     return;
   }
