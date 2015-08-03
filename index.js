@@ -62,7 +62,6 @@ module.exports = function (action, args, params) {
 
     runScript(action, args, params, cb);
 
-    process.on('SIGINT', stopScript);
     process.on('exit', stopScript);
   }
 
