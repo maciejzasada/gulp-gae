@@ -9,7 +9,8 @@ gulp-gae
 var gulp = require('gulp'),
   gae = require('gulp-gae');
 
-
+// Optionally you can omit gae_dir parameter to use built-in appengine library
+var gae_dir = '/home/user/google-appengine';
 gulp.task('gae-serve', function () {
   gulp.src('app/app.yaml')
     .pipe(gae('dev_appserver.py', [], {
@@ -17,7 +18,7 @@ gulp.task('gae-serve', function () {
       host: '0.0.0.0',
       admin_port: 8001,
       admin_host: '0.0.0.0'
-    }));
+    }, gae_dir));
 });
 
 
