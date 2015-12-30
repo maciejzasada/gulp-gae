@@ -38,7 +38,6 @@ module.exports = function (action, args, params, gae_dir) {
   function runScript(file, args, params, cb) {
     var scriptArgs = args.concat(parseParams(params));
     gutil.log('[gulp-gae]', scriptArgs);
-    console.log(file);
     proc = spawn(gae_dir + '/' + file, scriptArgs);
     proc.stdout.pipe(process.stdout);
     proc.stderr.pipe(process.stderr);
