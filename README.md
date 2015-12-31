@@ -7,7 +7,7 @@ gulp-gae
 # Usage
 ```javascript
 var gulp = require('gulp'),
-  gae = require('../');
+  gae = require('gulp-gae');
 
 
 gulp.task('gae-serve', function () {
